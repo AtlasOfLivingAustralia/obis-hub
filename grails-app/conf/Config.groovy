@@ -30,9 +30,9 @@ println "default_config = ${default_config}"
 /******************************************************************************\
  *  SKINNING
 \******************************************************************************/
-skin.layout = 'ozcam'
-skin.orgNameLong = "Ozcam"
-skin.orgNameShort = "Occurrences"
+skin.layout = 'obis'
+skin.orgNameLong = "The Ocean Biogeographic Information System"
+skin.orgNameShort = "OBIS Australia"
 // whether crumb trail should include a home link that is external to this webabpp - ala.baseUrl is used if true
 skin.includeBaseUrl = true
 //skin.headerUrl = "classpath:resources/generic-header.jsp" // can be external URL
@@ -42,8 +42,8 @@ skin.fluidLayout = true // true or false
 defaultListView = '' // 'mapView' or 'listView'
 chartsBgColour = "#FFFFFF"
 
-// Data hub UID needed for ozcam records
-biocache.queryContext = "data_hub_uid:dh1"
+// Data hub UID needed for obis records - dh3
+biocache.queryContext = "data_hub_uid:dh3"
 
 security.cas.appServerName = "http://dev.ala.org.au:8080"
 security.cas.casServerName = 'https://auth.ala.org.au'
@@ -137,15 +137,16 @@ environments {
         //grails.resources.debug = true // cache & resources plugins
     }
     test {
-        grails.serverURL = 'http://ozcam-test.ala.org.au'
-        serverName='http://ozcam-test.ala.org.au'
+        grails.serverURL = 'http://obis-test.ala.org.au'
+        serverName='http://obis-test.ala.org.au'
         security.cas.appServerName = serverName
         //security.cas.contextPath = "/${appName}"
     }
     production {
-        grails.serverURL = 'http://ozcam.ala.org.au'
-        serverName='http://ozcam.ala.org.au'
+        serverName = 'http://obis.ala.org.au'
+        grails.serverURL = serverName
         security.cas.appServerName = serverName
+        security.cas.contextPath = ''
     }
 }
 
