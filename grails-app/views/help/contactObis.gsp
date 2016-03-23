@@ -46,6 +46,8 @@
     <h1>OBIS Australia Contacts</h1>
 
 <p>
+Please address all enquiries about OBIS Australia to the Node Manager:<br/>
+
 Mr Andres Roubicek<br/>
 CSIRO Oceans and Atmosphere Flagship<br/>
 GPO Box 1538<br/>
@@ -66,7 +68,7 @@ Facsimile<br/>
 
 <p>
 Email<br/>
-Andres.Roubicek@csiro.au<br/>
+<a href="mailto:Andres.Roubicek@csiro.au">Andres.Roubicek@csiro.au</a><br/>
 </p>
 
 </div>
