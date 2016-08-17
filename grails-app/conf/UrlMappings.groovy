@@ -7,7 +7,7 @@ class UrlMappings {
             }
         }
         //"/"(view:"/index")
-        "/contact"(view:'/contact')
+        "/help/contactObis"(view:'/help/contactObis')
         "500"(view:'/error')
 	}
 }
