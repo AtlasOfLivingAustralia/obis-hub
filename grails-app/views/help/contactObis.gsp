@@ -47,17 +47,20 @@
 
 <p>
 Please address all enquiries about OBIS Australia to the Node Manager:<br/>
+</p>
 
-Mr Andres Roubicek<br/>
-CSIRO Oceans and Atmosphere Flagship<br/>
+<p>
+Dr Dave Watts<br/>
+CSIRO Oceans and Atmosphere<br/>
+Information and Data Centre<br/>
 GPO Box 1538<br/>
 Hobart Tasmania 7001, Australia<br/>
 </p>
 
 <p>
 Telephone<br/>
-+61 3 6232 5002 (international)<br/>
-(03) 6232 5002 (within Australia)<br/>
++61 3 6232 5062 (international)<br/>
+(03) 6232 5062 (within Australia)<br/>
 </p>
 
 <p>
@@ -68,7 +71,7 @@ Facsimile<br/>
 
 <p>
 Email<br/>
-<a href="mailto:Andres.Roubicek@csiro.au">Andres.Roubicek@csiro.au</a><br/>
+<a href="mailto:OBISAU@csiro.au">OBISAU@csiro.au</a><br/>
 </p>
 
 </div>
