@@ -5,7 +5,7 @@ grails.project.test.reports.dir = "target/test-reports"
 grails.project.work.dir = "target/work"
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
-grails.project.plugins.dir="plugins"
+//grails.project.plugins.dir="plugins"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 //grails.plugin.location.'biocache-hubs' = "../biocache-hubs"
 
@@ -48,27 +48,18 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        build ":release:3.0.1"
-        // plugins for the build system only
+        build(":release:3.0.1",
+                ":rest-client-builder:1.0.3") {
+            export = false
+        }
         build ":tomcat:7.0.54"
-
-        // plugins for the compile step
-        //compile ":scaffolding:2.0.1"
         compile ':cache:1.1.1'
+        compile ":cache-ehcache:1.0.0"
         compile ":cache-headers:1.1.6"
-        // plugins needed at runtime but not for compilation
-        //runtime ":hibernate:3.6.10.7" // or ":hibernate4:4.1.11.6"
-        //runtime ":database-migration:1.3.8"
-        //runtime ":jquery:1.10.2.2"
         runtime ":resources:1.2.8"
         runtime ":cached-resources:1.0"
-        //runtime ":zipped-resources:1.0"
-        // Uncomment these (or add new ones) to enable additional resources capabilities
-        //runtime ":zipped-resources:1.0.1"
-        //runtime ":cached-resources:1.1"
-        //runtime ":yui-minify-resources:0.1.5"
-        runtime ":biocache-hubs:1.3-SNAPSHOT"
-        runtime ":ala-bootstrap2:2.4.3-SNAPSHOT"
-        //runtime ":ala-web-theme:0.8.8-SNAPSHOT"
+        runtime ":biocache-hubs:1.3"
+        runtime ":generic-bootstrap2:1.0.1"
+        runtime ":ala-auth:1.3.4"
     }
 }
