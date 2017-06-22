@@ -53,12 +53,12 @@ grails.project.dependency.resolution = {
             export = false
         }
         build ":tomcat:7.0.54"
-        compile ':cache:1.1.1'
-        compile ":cache-ehcache:1.0.0"
-        compile ":cache-headers:1.1.6"
-        runtime ":resources:1.2.8"
+        compile ':cache:1.1.8'
+        compile ":cache-ehcache:1.0.5"
+        compile ":cache-headers:1.1.7"
+        runtime ":resources:1.2.14"
         runtime ":cached-resources:1.0"
-        runtime ":biocache-hubs:1.3"
+        runtime ":biocache-hubs:1.3.12"
         runtime ":generic-bootstrap2:1.0.1"
         runtime ":ala-auth:1.3.4"
     }
